@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Roboto-Light";
+}
+.page{
+    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 45%), url(../Assets/IMG/Mstiteli.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+section{
+    margin-top: 58px;
+}
+.section__line-bottom{
+    margin-top: 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 2px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+a{
+    transition: all 0.2s;
+}
+a:hover{
+    color: yellow;
+}
+
+
+.header{
+    margin-top: 30px;
+}
+.header-body{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.header-body__left{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: block;
+    margin-right: 56px;
+    width: 32px;
+    height: 32px;
+}
+.logo__img{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+}
+.menu{
+    display: flex;
+}
+.menu__item{
+    padding: 0px 12.5px;
+}
+.header-body__right{
+    display: flex;
+    align-items: center;
+}
+.header-body__right p{
+    padding: 0px 12px;
+}
+.avatar{
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.avatar__img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.main{
+    flex: 1 0 auto;
+}
+.film-body{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+}
+.film__body-top{
+    display: flex;
+}
+.film__descriptions-left{
+    width: 50%;
+}
+
+
+.film-name-original{
+    display: inline-block;
+}
+.name__original{
+    opacity: 50%;
+    font-size: 24px;
+}
+.film-name-translate{
+    display: inline-block;
+    margin: 12px 0px 23px 0px;
+}
+.name__translate{
+    font-weight: bold;
+    font-size: 36px;
+}
+.film-descriptions{
+    display: inline-block;
+}
+.film__descriptions{
+    line-height: 24px;
+}
+
+.film-time-and-raitings{
+    display: flex;
+    margin-top: 53px;
+}
+.film-time{
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+}
+.time__icon{
+    margin-right: 14px;
+    width: 24px;
+    height: 24px;
+}
+.time__txt{
+}
+.film-raiting{
+    display: flex;
+    align-items: center;
+}
+.raiting__icon{
+    margin-right: 14px;
+    width: 36px;
+    height: 18px;
+}
+.raiting-txts{
+    display: flex;
+    align-items: baseline;
+}
+.user__raiting{
+    font-weight: bold;
+    margin-right: 6px;
+    font-size: 24px;
+}
+.max__raiting{
+}
+.film__buttom-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.play-buttom{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.round__play{
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s;
+}
+.triagl__play{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+}
+.play-buttom:hover .round__play{
+    background-color: yellow;
+    transition: all 0.5s;
+}
+
+
+
+.film-date{
+
+}
+.film-schedule{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.film__schedule-date{
+
+}
+.schedule__date{
+    margin-bottom: 15px;
+}
+.cards{
+    display: flex;
+    gap: 15px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 8%;
+    width: 90px;
+    height: 90px;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+.card__date-number{
+    font-size: 30px;
+    font-weight: bold;
+}
+.card-content p{
+    text-align: center;
+    pointer-events: none;
+}
+.card:hover{
+    background-color: #FE8E05;
+    transition: all 0.5s;
+}
+.card:hover .card-content p{
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+.film__schedule-cinema{
+
+}
+.schedule__cinema{
+
+}
+.block-cinema{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    width: 470px;
+    height: 60px;
+}
+.block-content{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.film__schedule-times{
+
+}
+.schedule__times{
+
+}
+.block-date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    width: 108px;
+    height: 60px;
+}
+.block-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+.block-content p{
+    margin-right: 12px;
+}
+.strelka{
+    width: 10px;
+    height: 7px;
+}
+.oplata{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 158px;
+}
+.rows{
+    width: 1170px;
+    height: 686px;
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+}
+.title-box{
+    margin-bottom: 12px;
+}
+.title__oplata{
+    font-size: 18px;
+}
+.money__oplata{
+
+}
+.money__oplata{
+    font-size: 54px;
+}
+.money__oplata::after{
+    content: "\f158";
+    padding-left: 12px;
+    font-family:"FontAwesome";
+}
+.btn-oplata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    width: 254px;
+    height: 69px;
+    background-color: #FE8E05;
+}
+.btn__oplata{
+    font-size: 18px;
+    font-weight: 700;
+}
